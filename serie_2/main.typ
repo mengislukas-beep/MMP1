@@ -206,5 +206,5 @@ $
 $
 $epsilon -> 0$
 $
-  lim_(n->oo) int_E f_n d x=  int_E lim_(n->oo) f_n d x= int_E f d x
+  lim_(n->oo) int_E f_n d x=  int_E lim_(n->oo) f_n d x= int_E f d x\
 $
