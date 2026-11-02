@@ -209,6 +209,8 @@
 #let iff = $<=>$
 #let SO = "SO"
 #let intinf = $int_(-oo)^(oo)$
+#let intr= $int_(RR^n)$
+#let intpi = $int_(-pi)^pi$
 
 
 
