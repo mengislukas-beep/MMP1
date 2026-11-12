@@ -59,3 +59,13 @@ $
 integral_(-infinity)^infinity f(x) overline(g(x)) dif x
 = frac(1, 2pi) integral_(-infinity)^infinity hat(f)(k) overline(hat(g)(k)) dif k
 $
+
+*Fourier der Gauss funktion*
+$
+  f(x) = e^(-x^2/2)=> tilde(f)(k) = sqrt(2pi) e^(-k^2/2)
+$
+
+*hin transf.*
+$ hat(f)(omega) = integral_(RR^n) f(t) e^(-i omega t) dif t $
+*zurück transf.*
+$ f(t) = 1/(2 pi)^n integral_(RR^n) hat(f)(omega) e^(i omega t) dif omega $
