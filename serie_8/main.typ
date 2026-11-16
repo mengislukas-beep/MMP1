@@ -124,4 +124,65 @@ $
 $
   abs(hat(U) (omega)) = abs(hat(U)_0) 1/sqrt((1+ omega^2 R^2 C^2))
 $
-= keine Zeit 
+= 
+$
+  cal(L) (s) = int_[0,oo] f(t) e^(- s t) d t quadd s in CC
+$
+==
+$a in RR$ such that  $e^(- a t f (t)) in L^1 ([0,oo])$.\
+$Re(s) >= a$
+$
+  => int_([0,oo])  e^(-s t ) f(t) d t & <= int abs(e^(-s t) f(t)) d t\
+  &<= "const." int_([0,oo]) abs(f (t) e^(- a t)) d t \
+  &< oo
+$
+==
+===
+$
+  part/(part s)cal(L) (f)(s) &= part/(part s) int_0^oo f(t) e^(- s t)d t \
+  &=int_0^oo part/(part t) f(t) e^(- s t) - t f(t) e^(- s t) d t\
+  &= underbrace(part/(part s) int_0^oo f(t) e^(- s t) d t,=0) - int t f(t) e^(- s t) d t
+$
+$
+  => part^n/(part s^n) cal(L) (f)(s) = (-1)^n cal(L) (t^n f) (s)
+$
+===
+
+$
+  cal(L) (f^((n))) (s) &= int_0^oo f^((n))(t) e^( -s t ) d t\
+  &= [f^((n-1))(t) e^(- s t)]_0^oo + s int_0^oo f^((n-1)) e^(- s t) d t\
+  &= - f^((n-1)) (0) + s cal(L) (f^((n-1))) (s)\
+  &= s^n cal(L) (f)(s) - sum_(i =1)^n s^(i-1)  f^((n-i)) (0)
+$
+===
+===
+==
+===
+$
+  f(t) = t^c
+$
+
+$
+  cal(L)(t^c)(s) &= int_0^oo t^c e^(- s t) d t\
+  &= int_0^oo s^(-(c+1)) tau^c e^(- tau) d tau       quadd tau = s t\
+  &= s^(-(c+1)) Gamma(c +1)
+$
+===
+$
+  f(t) = e^(- c t)
+$
+$
+  cal(L) (e^(- c t)) (s) &= int_0^oo e^(-t(c + s)) d t\
+  &= [-1/(c + s) e^(-t(c + s))]_0^oo \
+  & = 1/(c + s)
+$
+Since $Re(c+s)>=0$
+===
+$
+  f(t) = cos(omega t), quadd omega in RR
+$
+$
+  cal(L) (cos(omega t)) (s) &= int_0^oo cos(omega t) e^(- s t) d t\
+  &=  1/2 int_0^oo e^(-t (s-i omega)) + e^(-t(s + i omega )) d t\
+  &= 1/2 (1/(s - i omega) +  1/(s + i omega)) = (s)/(s^2 + omega ^2)
+$
