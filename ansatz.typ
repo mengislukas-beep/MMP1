@@ -69,3 +69,25 @@ $
 $ hat(f)(omega) = integral_(RR^n) f(t) e^(-i omega t) dif t $
 *zurück transf.*
 $ f(t) = 1/(2 pi)^n integral_(RR^n) hat(f)(omega) e^(i omega t) dif omega $
+
+
+\
+\
+*Fouriertransformation – Rechenregeln:*
+
+$
+  cal(F)[f'(x)] = i k hat(f)(k)
+$
+
+$
+  cal(F)[x f(x)] = i hat(f)'(k)
+$
+*Fourier-Rücktransformation – Rechenregeln:*
+
+$
+  cal(F)^(-1)[hat(f)'(k)] = -i x f(x)
+$
+
+$
+  cal(F)^(-1)[k hat(f)(k)] = -i f'(x)
+$
