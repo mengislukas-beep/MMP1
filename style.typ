@@ -211,6 +211,7 @@
 #let intinf = $int_(-oo)^(oo)$
 #let intr= $int_(RR^n)$
 #let intpi = $int_(-pi)^pi$
+#let int3 = $int_(RR^3)$
 
 
 
